@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Badminton Scoreboard</title>
+  <link rel="stylesheet" href="badminton.css" />
+</head>
+<body>
+  <div class="scoreboard-container">
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <div class="team">
+        <h2>Team A</h2>
+        <div class="score red" id="scoreA">0</div>
+        <div class="bonus">BONUS</div>
+        <div class="button-container">
+          <div class="plus-wrapper">
+            <button class="plus-btn" data-team="A">+</button>
+            <div class="point-options hidden">
+              <button class="add1" data-team="A">+1</button>
+            </div>
+          </div>
+          <button class="minus-btn" data-team="A">-</button>
+        </div>
+      </div>
+
+      <div class="main-info">
+        <div class="period-container">
+            <div class="period">GAME</div>
+            <span class="periodnum">1</span>
+            <!-- Added reset and add button under period -->
+            <button class="period-btn add-game">+1 Game</button>
+            <button class="period-btn reset-game">Reset Game</button>
+          </div>
+          
+          <div class="series-score-container">
+            <div class="series-score">
+              <span class="series-text">Match Score</span>
+            </div>
+            <div class="series-score-counter">
+              <div class="team-score team-score1">
+                <button class="score-btn add-score1">+1</button>
+                <button class="score-btn reset-score1">Reset</button>
+                <div>0</div>
+              </div>
+              <div class="team-score team-score2">
+                <button class="score-btn add-score2">+1</button>
+                <button class="score-btn reset-score2">Reset</button>
+                <div>0</div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+      <div class="team">
+        <h2>Team B</h2>
+        <div class="score yellow" id="scoreB">0</div>
+        <div class="bonus">BONUS</div>
+        <div class="button-container">
+          <div class="plus-wrapper">
+            <button class="plus-btn" data-team="B">+</button>
+            <div class="point-options hidden">
+              <button class="add1" data-team="B">+1</button>
+            </div>
+          </div>
+          <button class="minus-btn" data-team="B">-</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Players Section -->
+    <div class="players-section">
+      <div class="players-grid">
+        <div class="team-players left-team">
+          <div class="player-card left-player" data-player="player1">
+            <div class="player-name">Shiro Kaze</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/api/placeholder/60/60" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Kenta Hayashi</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/api/placeholder/60/60" alt="Player">
+            </div>
+          </div>
+        </div>
+
+        <div class="players-header">Players</div>
+
+        <div class="team-players right-team">
+          <div class="player-card right-player" data-player="player3">
+            <div class="player-name">Akira Sano</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/api/placeholder/60/60" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player4">
+            <div class="player-name">Yuki Tanaka</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/api/placeholder/60/60" alt="Player">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="tennis.js"></script>
+</body>
+</html>
